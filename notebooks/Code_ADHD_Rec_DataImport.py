@@ -4,7 +4,7 @@ import mne
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-file_path = r"C:\Users\osoys\OneDrive - mci4me.at\Studium\MedTech\2_Semester\Data Analysis & AI\EEG_ADHD\adhdata.csv"
+file_path = r"data\adhdata.csv"
 data = pd.read_csv(file_path)
 
 data.head()
