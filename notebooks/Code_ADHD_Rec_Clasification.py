@@ -13,7 +13,10 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv1D, MaxPooling1D, LSTM, Dense, Dropout, Flatten
 
 # Load dataset
-df = pd.read_csv(data/adhdata.csv)
+print(os.getcwd())
+
+file_path = r"data\adhdata.csv"
+df = pd.read_csv(file_path)
 print("Dataset shape:", df.shape)
 print("Columns:", df.columns)
 
