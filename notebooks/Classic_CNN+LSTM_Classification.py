@@ -74,4 +74,4 @@ plt.show()
 
 print(classification_report(y_test, y_pred_classes))
 
-model.save("modells/adhd_eeg_model.h5")
+model.save("modells/classic_cnn_lstm_model.h5")
