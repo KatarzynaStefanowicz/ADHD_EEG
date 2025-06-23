@@ -1,6 +1,7 @@
 #*.zip
 
 my_venv/
+notebooks/processed_spectrograms/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

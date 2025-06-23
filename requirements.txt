@@ -8,3 +8,7 @@ mne
 requests
 gdown
 tensorflow
+PyWavelets
+opencv-python
+torch 
+tqdm 
