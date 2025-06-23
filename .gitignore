@@ -1,6 +1,6 @@
 #*.zip
 
-my_venv/
+my_env/
 notebooks/processed_spectrograms/
 
 # Byte-compiled / optimized / DLL files
