@@ -1,0 +1,30 @@
+import numpy as np
+
+def fft_augmentation(eeg_data, noise_level=0.05, random_seed=None):
+    """
+    Augment EEG data by adding Gaussian noise in the frequency domain (FFT).
+    
+    Parameters:
+        eeg_data: np.ndarray
+            EEG data of shape (n_channels, n_samples)
+        noise_level: float
+            Standard deviation of Gaussian noise to add in the frequency domain (relative to signal std)
+        random_seed: int or None
+            Seed for reproducibility
+            
+    Returns:
+        eeg_aug: np.ndarray
+            Augmented EEG data of shape (n_channels, n_samples)
+    """
+    if random_seed is not None:
+        np.random.seed(random_seed)
+    eeg_aug = np.zeros_like(eeg_data)
+    for ch in range(eeg_data.shape[0]):
+        # FFT
+        fft_vals = np.fft.rfft(eeg_data[ch])
+        # Add noise
+        noise = np.random.normal(0, noise_level * np.std(np.abs(fft_vals)), size=fft_vals.shape)
+        fft_vals_noisy = fft_vals + noise
+        # Inverse FFT
+        eeg_aug[ch] = np.fft.irfft(fft_vals_noisy, n=eeg_data.shape[1])
+    return eeg_aug

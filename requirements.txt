@@ -1,0 +1,14 @@
+numpy 
+pandas 
+matplotlib 
+seaborn 
+scikit-learn 
+scipy 
+mne 
+requests
+gdown
+tensorflow
+PyWavelets
+opencv-python
+torch 
+tqdm 
