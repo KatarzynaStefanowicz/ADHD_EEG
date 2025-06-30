@@ -2,6 +2,8 @@
 
 my_env/
 notebooks/processed_spectrograms/
+notebooks/models/spectogramV3_2.h5
+notebooks/models/spectogramV3_2.keras
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
