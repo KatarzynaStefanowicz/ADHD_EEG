@@ -1,9 +1,10 @@
-EEG Data Augmentation and Preprocessing Toolkit
+###EEG Data Augmentation and Preprocessing Toolkit
 
 This repository folder contains Jupyter notebooks for augmenting, visualizing, and preprocessing EEG datasets, designed to improve the robustness and performance of machine learning models in EEG-based tasks.
 
-Contents
-1. EEG_Augmentation_DataMixing.ipynb
+**Contents**
+
+**1. `EEG_Augmentation_DataMixing.ipynb`**
 Description:
 
 Demonstrates data augmentation through mixing of EEG samples.
@@ -14,7 +15,7 @@ Usage:
 
 Run this notebook to generate new mixed EEG samples.
 
-2. EEG_Augmentation_NoiseInjection.ipynb
+**2. `EEG_Augmentation_NoiseInjection.ipynb`**
 Description:
 
 Adds controlled noise to EEG signals to improve model robustness.
@@ -27,7 +28,7 @@ Run this notebook to apply noise-based augmentation to your dataset.
 
 Parameters such as noise level and type can be adjusted within the notebook.
 
-3. EEG_Augmentation_Visualization.ipynb
+**3. `EEG_Augmentation_Visualization.ipynb`**
 Description:
 
 Provides visualization tools for comparing raw and augmented EEG signals.
@@ -40,7 +41,7 @@ Run this notebook after applying augmentation to inspect results.
 
 Helps validate that augmentations maintain signal integrity.
 
-4. id_change.ipynb
+**4. `id_change.ipynb`**
 Description:
 
 Utility notebook for modifying or re-encoding participant or trial IDs in EEG datasets.
